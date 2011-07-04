@@ -1,0 +1,15 @@
+<% @path.each do |p| -%>
+    <%= p %> {
+    <%= @frequency %>
+    missingok
+    rotate <%= @rotate %>
+    compress
+    delaycompress
+    copytruncate
+    notifempty
+    size 10000k
+    create <%= @create %>
+    postrotate
+    endscript
+}
+<% end -%>

@@ -1,0 +1,1 @@
+exec sudo /usr/local/<%= node[:kafka][:distribution] %>/bin/kafka-server-start.sh /usr/local/<%= node[:kafka][:distribution] %>/config/server.properties > /var/log/kafka/startup.log
