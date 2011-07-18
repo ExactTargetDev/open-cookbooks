@@ -7,6 +7,8 @@
 # All rights reserved - Do Not Redistribute
 #
 
+package "unzip"
+
 remote_file "/tmp/".concat(node[:kafka][:distribution]).concat(".zip") do
   source node[:kafka][:source].concat(node[:kafka][:distribution]).concat(".zip")
   mode "755"
