@@ -1,0 +1,12 @@
+= DESCRIPTION:
+
+Cookbook for Kafka
+
+= REQUIREMENTS:
+
+Java, Zookeeper
+
+= ATTRIBUTES:
+
+= USAGE:
+

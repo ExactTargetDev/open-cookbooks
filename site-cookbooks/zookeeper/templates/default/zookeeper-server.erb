@@ -1,0 +1,8 @@
+export ZOOPIDFILE=${ZOOPIDFILE:-/var/run/zookeeper/zookeeper-server.pid}
+export ZOOKEEPER_HOME=${ZOOKEEPER_CONF:-/usr/lib/zookeeper}
+export ZOOKEEPER_CONF=${ZOOKEEPER_CONF:-/etc/zookeeper}
+export CLASSPATH=$CLASSPATH:$ZOOKEEPER_CONF:$ZOOKEEPER_HOME/*:$ZOOKEEPER_HOME/lib/*
+export ZOO_LOG_DIR=/var/log/zookeeper
+export ZOO_LOG4J_PROP=INFO,ROLLINGFILE
+export JVMFLAGS="-Dzookeeper.log.threshold=INFO -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.port=9501"
+env CLASSPATH=$CLASSPATH /usr/lib/zookeeper/bin/zkServer.sh "$@"

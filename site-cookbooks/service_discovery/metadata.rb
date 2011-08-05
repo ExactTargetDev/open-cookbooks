@@ -1,0 +1,5 @@
+maintainer       "Eric Hauser"
+maintainer_email "ehauser@exacttarget.com"
+license          "Apache 2.0"
+description      "Library for discovering services"
+version          "0.0.1"
